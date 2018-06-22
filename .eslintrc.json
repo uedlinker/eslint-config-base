@@ -9,6 +9,13 @@
     "node": true
   },
 
+  "plugins": [
+    "import",
+    "node",
+    "promise",
+    "standard"
+  ],
+
   "rules": {
     "for-direction": "error",
     "getter-return": ["error", {
@@ -351,6 +358,21 @@
     "rest-spread-spacing": ["error", "never"],
     "symbol-description": "error",
     "template-curly-spacing": ["error", "never"],
-    "yield-star-spacing": ["error", "both"]
+    "yield-star-spacing": ["error", "both"],
+
+    "import/export": "error",
+    "import/first": "error",
+    "import/no-duplicates": "error",
+    "import/no-webpack-loader-syntax": "error",
+
+    "node/no-deprecated-api": "error",
+    "node/process-exit-as-throw": "error",
+
+    "promise/param-names": "error",
+
+    "standard/array-bracket-even-spacing": ["error", "either"],
+    "standard/computed-property-even-spacing": ["error", "even"],
+    "standard/no-callback-literal": "error",
+    "standard/object-curly-even-spacing": ["error", "either"]
   }
 }
