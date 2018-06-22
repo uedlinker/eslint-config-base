@@ -2,6 +2,31 @@
 
 JS 代码规范基础配置，适用于 Node.js 项目。
 
+## 安装
+
+```shell
+npm install --save-dev eslint eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard @uedlinker/eslint-config-base
+```
+
+## 使用
+
+在项目中，创建 `.eslintrc` 文件，并设置 `extends` 属性。
+
+```json
+{
+  "extends": ["@uedlinker/eslint-config-base"]
+}
+```
+
+## TODO
+
+- [ ] 在项目中使用此配置；
+- [ ] 仔细阅读 [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) 文档，并优化配置和文档；
+- [ ] 仔细阅读 [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) 文档，并优化配置和文档；
+- [ ] 仔细阅读 [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise) 文档，并优化配置和文档；
+- [ ] 仔细阅读 [eslint-plugin-standard](https://github.com/standard/eslint-plugin-standard) 文档，并优化配置和文档；
+- [ ] 在 [awesome-eslint](https://github.com/dustinspecker/awesome-eslint) 寻找其他的插件，如果有适合 Node.js 项目的，则添加到配置项中。
+
 ## 规则
 
 ### 语法错误或逻辑错误相关
