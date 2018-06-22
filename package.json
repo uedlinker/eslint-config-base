@@ -1,0 +1,29 @@
+{
+  "name": "@uedlinker/eslint-config-base",
+  "version": "0.1.0",
+  "description": "JS 代码规范基础配置，适用于 Node.js 项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . --config=.eslintrc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uedlinker/eslint-config-base.git"
+  },
+  "keywords": [
+    "ESLint",
+    "configuration"
+  ],
+  "author": "李蔚生 <971353677@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uedlinker/eslint-config-base/issues"
+  },
+  "homepage": "https://github.com/uedlinker/eslint-config-base#readme",
+  "devDependencies": {
+    "eslint": "^5.0.0-rc.0"
+  },
+  "peerDependencies": {
+    "eslint": "^5.0.0-rc.0"
+  }
+}
