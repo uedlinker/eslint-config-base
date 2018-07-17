@@ -1,6 +1,6 @@
 {
   "name": "@uedlinker/eslint-config-base",
-  "version": "1.0.0-alpha",
+  "version": "0.2.0",
   "description": "ES 代码规范基础配置，适用于 Node.js 项目",
   "main": "index.js",
   "scripts": {
