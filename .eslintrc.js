@@ -107,8 +107,6 @@ module.exports = {
     'no-global-assign': 'error',
     // 禁用隐式的 `eval()`
     'no-implied-eval': 'error',
-    // 禁止 `this` 关键字在类或类对象之外出现
-    'no-invalid-this': 'error',
     // 禁用迭代器
     'no-iterator': 'error',
     // 禁止除了循环或 `switch` 之外使用标签
@@ -180,12 +178,6 @@ module.exports = {
     'no-delete-var': 'error',
     // 禁用与变量同名的标签
     'no-label-var': 'error',
-    // 禁止变量声明覆盖外层作用域的变量
-    'no-shadow': ['error', {
-      builtinGlobals: false,
-      hoist: 'all',
-      allow: ['resolve', 'reject', 'done', 'cb', 'callback', 'next'],
-    }],
     // 禁止将标识符定义为受限的名字
     'no-shadow-restricted-names': 'error',
     // 禁用未声明的变量
@@ -233,13 +225,7 @@ module.exports = {
     // 强制使用小骆驼形式命名变量，不检查属性
     camelcase: ['error', { properties: 'never' }],
     // 强制使用拖尾逗号
-    'comma-dangle': ['error', {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      imports: 'always-multiline',
-      exports: 'always-multiline',
-      functions: 'always-multiline',
-    }],
+    'comma-dangle': ['error', 'always-multiline'],
     // 强制在逗号后面使用空格
     'comma-spacing': ['error', { before: false, after: true }],
     // 强制将逗号放置在当前行的末尾
@@ -251,7 +237,7 @@ module.exports = {
     // 禁止在函数标识符和其调用之间有空格
     'func-call-spacing': ['error', 'never'],
     // 强制在函数括号内使用一致的换行
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': ['error', 'consistent'],
     // 禁止在箭头函数体之前出现换行
     'implicit-arrow-linebreak': ['error', 'beside'],
     // 强制使用两个空格的缩进
